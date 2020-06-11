@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  itunes_django:
+    container_name: rmi_django
+    build: .
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    ports:
+      - 9020:80
+    command: ["python", "/app/manage.py", "runserver", "0:80"]
+    environment:
+      DEBUG: 'True'
