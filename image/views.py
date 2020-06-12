@@ -15,7 +15,7 @@ class CarpetImageClassifierAPIView(APIView):
 
         img = cv2.imread('tmp/'+filename)
 
-        # add white border
+        # add white padding
         WHITE = [255,255,255]
         img= cv2.copyMakeBorder(img,30,30,30,30,cv2.BORDER_CONSTANT,value=WHITE)
 
