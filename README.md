@@ -11,6 +11,7 @@ and boom :)
 **Usage:**<br />
 Send your image by post request to this endpoint
 `http://YOUR_IP_ADDRESS:9020/v1/carpet_classifier/image/`
+<br />
 You can also check video that show how you can use this endpoint.
 
 
